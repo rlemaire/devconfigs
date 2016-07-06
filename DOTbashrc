@@ -1,0 +1,30 @@
+alias ll='ls $LS_OPTIONS -l'
+alias gs="git status"
+alias gd="git diff"
+alias gc="git checkout"
+alias gbl="git branch -l"
+alias gco="git checkout"
+alias purr="git pull --rebase"
+alias gadd="git add . --all"
+alias gamend="git commit --amend"
+alias gaddgamend="git add . --all && git commit --amend"
+alias gcoma="git commit -a"
+
+alias orig="find . -name \"*.orig\""
+
+alias glog="git log --stat"
+alias myglog="git log --stat --author=\"Raphaël Lemaire\""
+alias mylog="git log --author=\"Raphaël Lemaire\""
+alias gslog="git log --pretty=format:\"%C(auto,blue)%H%C(auto,reset) %C(auto,yellow)%ad%C(auto,reset) %s %C(auto,red)%an%C(auto,reset)\"  --date=iso"
+alias mygslog="git log --pretty=format:\"%C(auto,blue)%H%C(auto,reset) %C(auto,yellow)%ad%C(auto,reset) %s %C(auto,red)%an%C(auto,reset)\"  --date=iso --author=\"Raphaël Lemaire\""
+alias gdone="git log --author=\"Raphaël Lemaire\" --pretty=format:\"%C(auto,yellow)%ad%C(auto,reset) %s\" --reverse --since=2.day --no-merges --date=iso"
+alias gadone="git log --author=\"Raphaël Lemaire\" --pretty=format:\"%C(auto,yellow)%ad%C(auto,reset) %s\" --reverse --since=2.day --no-merges --date=iso --all"
+
+alias mci="mvn  clean install "
+alias qmci="mvn clean install -Dmaven.test.skip=true"
+alias gcb="grunt clean build"
+alias gct="grunt clean build test"
+alias play="activator"
+export EDITOR=vim
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
+fortune -s
